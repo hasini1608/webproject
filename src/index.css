@@ -1,0 +1,64 @@
+/* ===== Reset Default Browser Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Root Variables ===== */
+:root {
+  --primary: #1abc9c;
+  --primary-dark: #16a085;
+  --dark: #2c3e50;
+  --light-bg: #f4f6f9;
+  --white: #ffffff;
+  --gray: #7f8c8d;
+}
+
+/* ===== Body Styling ===== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--dark);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ===== Smooth Rendering ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Anchor Tags ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Buttons Default ===== */
+button {
+  font-family: inherit;
+}
+
+/* ===== Input & Textarea Defaults ===== */
+input,
+textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+/* ===== Center Container Utility (Optional) ===== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== Utility Classes ===== */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}

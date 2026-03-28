@@ -1,0 +1,282 @@
+/* ---------- BODY ---------- */
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#ffd6e8,#d6ecff,#e7d8ff);
+}
+
+/* ---------- CENTER LOGIN / SIGNUP ---------- */
+
+.center{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* ---------- CARD ---------- */
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+width:340px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.card h2{
+color:#ff4d88;
+margin-bottom:20px;
+}
+
+.card input{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+.card button{
+width:100%;
+padding:10px;
+border:none;
+border-radius:10px;
+background:#ff6fa5;
+color:white;
+cursor:pointer;
+font-size:15px;
+margin-top:10px;
+transition:0.3s;
+}
+
+.card button:hover{
+background:#ff4d88;
+}
+
+.link{
+color:#6a5acd;
+cursor:pointer;
+margin-top:10px;
+font-size:14px;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.container{
+width:80%;
+margin:auto;
+background:white;
+border-radius:20px;
+padding:25px;
+margin-top:40px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ---------- TITLES ---------- */
+
+.title{
+text-align:center;
+color:#ff4d88;
+margin-bottom:20px;
+}
+
+/* ---------- DASHBOARD BUTTON ---------- */
+
+.calendarBtn{
+background:#6a5acd;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:10px;
+cursor:pointer;
+margin-bottom:15px;
+transition:0.3s;
+}
+
+.calendarBtn:hover{
+background:#5941c9;
+}
+
+/* ---------- CALENDAR HEADER ---------- */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#ffe6f2;
+padding:10px 15px;
+border-radius:15px;
+margin-bottom:10px;
+}
+
+.header h2{
+color:#333;
+}
+
+.header button{
+background:#ff99cc;
+border:none;
+padding:8px 16px;
+border-radius:10px;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.header button:hover{
+background:#ff4d88;
+}
+
+/* ---------- WEEKDAYS ---------- */
+
+.weekdays{
+display:grid;
+grid-template-columns:repeat(7,1fr);
+text-align:center;
+font-weight:bold;
+margin-top:15px;
+color:#444;
+}
+
+/* ---------- CALENDAR GRID ---------- */
+
+.calendar{
+display:grid;
+grid-template-columns:repeat(7,1fr);
+gap:10px;
+margin-top:10px;
+}
+
+/* ---------- DAY CELL ---------- */
+
+.day{
+background:#ffffff;
+padding:18px;
+text-align:center;
+border-radius:10px;
+cursor:pointer;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+transition:0.3s;
+font-weight:500;
+}
+
+.day:hover{
+background:#ffe6f2;
+transform:scale(1.05);
+}
+
+/* ---------- EVENT DOT ---------- */
+
+.dot{
+width:7px;
+height:7px;
+background:red;
+border-radius:50%;
+margin:auto;
+margin-top:5px;
+}
+
+/* ---------- POPUP MODAL ---------- */
+
+.modal-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.35);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:100;
+}
+
+/* ---------- MODAL BOX ---------- */
+
+.modal{
+background:white;
+padding:25px;
+border-radius:15px;
+width:340px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal h3{
+text-align:center;
+color:#ff4d88;
+}
+
+.modal input,
+.modal textarea{
+width:100%;
+padding:9px;
+margin-top:10px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+.modal textarea{
+resize:none;
+height:70px;
+}
+
+/* ---------- BUTTON GROUP ---------- */
+
+.buttons{
+display:flex;
+justify-content:space-between;
+margin-top:12px;
+}
+
+.buttons button{
+padding:8px 14px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.buttons button:first-child{
+background:#28a745;
+color:white;
+}
+
+.buttons button:last-child{
+background:#ff4d6d;
+color:white;
+}
+
+/* ---------- EVENT CARD ---------- */
+
+.event-card{
+background:#ffe6f2;
+padding:10px;
+margin-top:10px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+.event-card h4{
+margin:5px 0;
+color:#333;
+}
+
+.event-card p{
+font-size:14px;
+color:#555;
+}
+
+.event-card button{
+background:red;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:8px;
+cursor:pointer;
+margin-top:5px;
+}
