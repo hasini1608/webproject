@@ -3,7 +3,10 @@ export default function EventModal({
   setShow,
   saveEvent,
   setTitle,
-  setDesc
+  setDesc,
+  setStartTime,
+  setEndTime,
+  setVenue
 }) {
   return (
     <div className="modal-overlay">
@@ -21,9 +24,25 @@ export default function EventModal({
           onChange={(e)=>setDesc(e.target.value)}
         />
 
+       <input
+type="time"
+placeholder="Start Time"
+onChange={(e)=>setStartTime(e.target.value)}
+/>
+
+<input
+type="time"
+placeholder="End Time"
+onChange={(e)=>setEndTime(e.target.value)}
+/>
+
+<input
+placeholder="Venue"
+onChange={(e)=>setVenue(e.target.value)}
+/>
         <div className="buttons">
           <button onClick={saveEvent}>Save</button>
-          <button onClick={()=>setShow(false)}>Cancel</button>
+
         </div>
 
       </div>

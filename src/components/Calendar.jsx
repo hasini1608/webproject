@@ -5,7 +5,12 @@ export default function Calendar({
   months, month, year,
   changeMonth, renderDays,
   show, selected, setShow,
-  saveEvent, setTitle, setDesc,
+  saveEvent,
+  setTitle,
+  setDesc,
+  setStartTime,
+  setEndTime,
+  setVenue,
   loading
 }) {
 
@@ -40,13 +45,16 @@ export default function Calendar({
       )}
 
       {show && (
-        <EventModal
-          selected={selected}
-          setShow={setShow}
-          saveEvent={saveEvent}
-          setTitle={setTitle}
-          setDesc={setDesc}
-        />
+       <EventModal
+  selected={selected}
+  setShow={setShow}
+  saveEvent={saveEvent}
+  setTitle={setTitle}
+  setDesc={setDesc}
+  setStartTime={setStartTime}
+  setEndTime={setEndTime}
+  setVenue={setVenue}
+/>
       )}
 
     </div>
